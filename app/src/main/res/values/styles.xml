@@ -36,7 +36,7 @@
         <item name="android:windowBackground">@color/background</item>
     </style>
 
-    <!-- Material Button Style -->
+    <!-- Material Main Button Style -->
     <style name="MainButtonDesign" parent="Widget.MaterialComponents.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/button_size</item>

@@ -25,7 +25,6 @@
         android:src="@drawable/gpc_logo" />
 
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/fadeButton"
         android:layout_width="match_parent"
