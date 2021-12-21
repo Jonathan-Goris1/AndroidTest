@@ -1,0 +1,61 @@
+<resources>
+    <!-- Splash application Screen -->
+    <style name="SplashScreenTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/gpc_splash</item>
+    </style>
+    <!-- Main application theme. -->
+    <style name="MainActivityTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/gpc_background</item>
+    </style>
+
+    <!-- Chat application theme. -->
+    <style name="ChatActivityTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Login application theme. -->
+    <style name="LoginActivityTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/gpc_sunset</item>
+    </style>
+
+    <!-- Animation application theme. -->
+    <style name="AnimationActivityTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Material Button Style -->
+    <style name="MainButtonDesign" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_size</item>
+        <item name="alpha">@dimen/button_alpha</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="paddingStart">@dimen/button_padding</item>
+        <item name="paddingEnd">@dimen/button_padding</item>
+        <item name="android:shadowColor">@color/Black</item>
+        <item name="android:shadowDx">@dimen/button_shadowDx</item>
+        <item name="android:shadowDy">@dimen/button_shadowDy</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="iconSize">@dimen/button_icon_size</item>
+        <item name="iconPadding">@dimen/button_icon_padding</item>
+        <item name="iconTint">@color/Black</item>
+        <item name="rippleColor">@color/Black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.MainFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonChat"
+        style="@style/MainButtonDesign"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/background"
+        android:text="@string/chat_button"
+        app:icon="@drawable/ic_chat" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogin"
+        style="@style/MainButtonDesign"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/background"
+        android:text="@string/login_button"
+        app:icon="@drawable/ic_lock" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAnimation"
+        style="@style/MainButtonDesign"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="213dp"
+        android:backgroundTint="@color/background"
+        android:text="@string/animation_button"
+        app:icon="@drawable/ic_animation" />
+</LinearLayout>
+
