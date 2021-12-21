@@ -10,6 +10,7 @@ import com.datechnologies.androidtest.data.repository.LoginRepository
 //classes in the project
 //every ViewModel created must have a ModelClass declared here or
 //the app with not be able to find the ViewModel
+@Suppress("UNCHECKED_CAST")
 class ViewModelFactory(
         private val repository: BaseRepository
 ) : ViewModelProvider.NewInstanceFactory() {

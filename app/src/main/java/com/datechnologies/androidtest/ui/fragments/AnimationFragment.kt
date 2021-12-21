@@ -11,14 +11,17 @@ import android.view.DragEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
+import android.widget.RelativeLayout
 import androidx.annotation.RequiresApi
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.datechnologies.androidtest.databinding.FragmentAnimationBinding
 import com.datechnologies.androidtest.ui.fragments.base.BaseFragment
 import nl.dionsegijn.konfetti.models.Shape
 import nl.dionsegijn.konfetti.models.Size
 
-
 class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
+
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -55,10 +58,11 @@ class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
 //    }
 
     private val dragListener = View.OnDragListener { view, event ->
-//        val layoutParams = binding.animationScreen.layoutParams as ConstraintLayout.LayoutParams
+        //val layoutParams = binding.techImageView.layoutParams as RelativeLayout.LayoutParams
         when (event.action) {
             DragEvent.ACTION_DRAG_STARTED -> {
                 event.clipDescription.hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN)
+
             }
             DragEvent.ACTION_DRAG_ENTERED -> {
                 view.invalidate()
@@ -79,6 +83,7 @@ class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
                 true
             }
             DragEvent.ACTION_DRAG_ENDED -> {
+                view.visibility = View.VISIBLE
                 view.invalidate()
                 true
             }

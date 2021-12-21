@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.LoginActivity">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment"
         android:name="com.datechnologies.androidtest.ui.fragments.LoginFragment"
         android:layout_width="match_parent"
