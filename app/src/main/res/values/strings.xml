@@ -2,7 +2,6 @@
     <string name="app_name">AndroidTest</string>
 
     <!-- Main Screen Strings -->
-    <string name="activity_main_title">Coding Tasks</string>
     <string name="chat_button">CHAT</string>
     <string name="login_button">LOG IN</string>
     <string name="animation_button">ANIMATION</string>
@@ -13,7 +12,6 @@
     <!-- Animation Screen Strings -->
     <string name="fade_in">FADE IN</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="logo">Logo</string>
 
 </resources>

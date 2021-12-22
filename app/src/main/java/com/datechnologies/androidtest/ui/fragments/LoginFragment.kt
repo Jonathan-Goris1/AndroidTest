@@ -27,15 +27,12 @@ class LoginFragment : BaseFragmentApi<LoginViewModel, FragmentLoginBinding, Logi
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
-        binding.loginProgressBar.visible(false)
         binding.buttonLogin.enable(false)
         val imm: InputMethodManager = requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
 
 
         viewModel.loginResponse.observe(viewLifecycleOwner, {
-            binding.loginProgressBar.visible(it is Wrapper.Loading)
+
             when (it) {
                 is Wrapper.Success -> {
                     lifecycleScope.launch {

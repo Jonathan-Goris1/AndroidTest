@@ -16,6 +16,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginRight="30dp"
         android:hint="@string/email"
+        android:textColorHint="@color/hintColor"
         app:boxBackgroundMode="filled"
         app:boxStrokeColor="@color/button_blue"
         app:boxStrokeWidth="2dp">
@@ -36,8 +37,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="30dp"
         android:hint="@string/password"
+        android:textColorHint="@color/hintColor"
         app:boxBackgroundMode="filled"
-        app:boxStrokeColor="@color/Black"
+
+        app:boxStrokeColor="@color/transparent"
         app:boxStrokeWidth="2dp">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -65,10 +68,5 @@
         app:cornerRadius="0dp"
         app:rippleColor="@color/Black"
          />
-
-    <ProgressBar
-        android:id="@+id/loginProgressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 </LinearLayout>
 

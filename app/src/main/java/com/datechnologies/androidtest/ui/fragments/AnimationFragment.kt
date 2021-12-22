@@ -11,10 +11,8 @@ import android.view.DragEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
-import android.widget.RelativeLayout
+import android.widget.Toast
 import androidx.annotation.RequiresApi
-import androidx.constraintlayout.widget.ConstraintLayout
 import com.datechnologies.androidtest.databinding.FragmentAnimationBinding
 import com.datechnologies.androidtest.ui.fragments.base.BaseFragment
 import nl.dionsegijn.konfetti.models.Shape
@@ -48,17 +46,9 @@ class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
         }
 
     }
-//    private fun playCheer(){
-//        val mp = MediaPlayer.create(requireContext(), R.raw.cheering)
-//        if(mp.isPlaying){
-//            mp.stop()
-//            mp.release()
-//        }else{mp.start()
-//            mp.release()}
-//    }
 
     private val dragListener = View.OnDragListener { view, event ->
-        //val layoutParams = binding.techImageView.layoutParams as RelativeLayout.LayoutParams
+
         when (event.action) {
             DragEvent.ACTION_DRAG_STARTED -> {
                 event.clipDescription.hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN)
@@ -74,17 +64,23 @@ class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
                 true
             }
             DragEvent.ACTION_DROP -> {
-//                layoutParams?.marginStart = event.x.toInt()
-//                layoutParams?.topMargin = event.y.toInt()
-//                view.layoutParams = layoutParams
                 view.invalidate()
                 val v = event.localState as View
+                v.y = event.y.toInt().toFloat() - (v.height.div(2))
+                v.x = event.x.toInt().toFloat() - (v.width.div(2))
+                Toast.makeText(requireContext(), v.x.toString() + " " + v.y.toString(), Toast.LENGTH_LONG).show()
                 v.visibility = View.VISIBLE
                 true
             }
             DragEvent.ACTION_DRAG_ENDED -> {
-                view.visibility = View.VISIBLE
                 view.invalidate()
+//                when(event.result) {
+//                    true ->
+//                        Toast.makeText(requireContext(), "", Toast.LENGTH_SHORT)
+//                    else ->
+//                        Toast.makeText(requireContext(), view.width.toString() + " " +  view.height.toString(), Toast.LENGTH_LONG)
+//
+//                }.show()
                 true
             }
             else -> false

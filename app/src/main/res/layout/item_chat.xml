@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:textSize="@dimen/button_text_size"
+            android:textSize="@dimen/Username_text_size"
             android:textStyle="bold"
             tools:text="Jerry" />
 
@@ -58,7 +58,7 @@
                 android:layout_marginTop="4dp"
                 android:padding="8dp"
                 android:textColor="@color/chat_text"
-                android:textSize="@dimen/button_text_size"
+                android:textSize="@dimen/Message_text_size"
                 tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra, sapien at luctus semper, justo dui accumsan lorem, nec pretium dui eros pharetra leo." />
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>

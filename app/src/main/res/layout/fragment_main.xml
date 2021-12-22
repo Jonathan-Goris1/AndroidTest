@@ -18,6 +18,7 @@
         android:layout_marginRight="30dp"
         android:backgroundTint="@color/background"
         android:text="@string/chat_button"
+        android:alpha="0.80"
         app:icon="@drawable/ic_chat" />
 
     <com.google.android.material.button.MaterialButton
@@ -29,6 +30,7 @@
         android:layout_marginBottom="24dp"
         android:backgroundTint="@color/background"
         android:text="@string/login_button"
+        android:alpha="0.80"
         app:icon="@drawable/ic_lock" />
 
     <com.google.android.material.button.MaterialButton
@@ -39,6 +41,7 @@
         android:layout_marginBottom="213dp"
         android:backgroundTint="@color/background"
         android:text="@string/animation_button"
+        android:alpha="0.80"
         app:icon="@drawable/ic_animation" />
 </LinearLayout>
 

@@ -25,7 +25,7 @@ class ChatFragment : BaseFragmentApi<ChatViewModel, FragmentChatBinding, ChatRep
         binding.chatProgressBar.visible(false)
         viewModel.getMessage()
 
-        viewModel.message.observe(viewLifecycleOwner, Observer {
+        viewModel.message.observe(viewLifecycleOwner, {
             when (it) {
                 is Wrapper.Success -> {
                     showChat(it.value.data)
@@ -34,6 +34,7 @@ class ChatFragment : BaseFragmentApi<ChatViewModel, FragmentChatBinding, ChatRep
                 is Wrapper.Loading -> {
                     binding.chatProgressBar.visible(true)
                 }
+                else -> binding.chatProgressBar.visible(false)
             }
         })
     }

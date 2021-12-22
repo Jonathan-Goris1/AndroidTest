@@ -29,18 +29,11 @@
     </style>
 
     <!-- Animation application theme. -->
-    <style name="AnimationActivityTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/background</item>
-    </style>
 
     <!-- Material Main Button Style -->
     <style name="MainButtonDesign" parent="Widget.MaterialComponents.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/button_size</item>
-        <item name="alpha">@dimen/button_alpha</item>
         <item name="fontFamily">sans-serif-medium</item>
         <item name="paddingStart">@dimen/button_padding</item>
         <item name="paddingEnd">@dimen/button_padding</item>
@@ -57,5 +50,6 @@
         <item name="iconTint">@color/Black</item>
         <item name="rippleColor">@color/Black</item>
     </style>
+
 
 </resources>
