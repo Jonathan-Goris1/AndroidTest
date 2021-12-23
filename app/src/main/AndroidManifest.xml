@@ -28,7 +28,9 @@
         <activity
             android:name=".ui.activity.MainActivity"
             android:theme="@style/SplashScreenTheme"
-            android:label="Coding Tasks">
+
+            android:label="Coding Tasks"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
